@@ -10,9 +10,10 @@
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Esri Nederland Github</title>
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="/css/calcite-web.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/calcite-web.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -89,10 +90,22 @@
         </div>
     </div>
 
-    <script src="/js/calcite-web.min.js"></script>
+    <script src="js/calcite-web.min.js"></script>
 
     <!-- interactive patterns need to be initialized -->
     <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('sw.js').then(function (registration) {
+                    // Registration was successful
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (err) {
+                    // registration failed :(
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
         calcite.init()
     </script>
 </body>
