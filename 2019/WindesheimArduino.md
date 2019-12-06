@@ -1,4 +1,4 @@
-# Windesheim Adruino Informatieportaal
+# Windesheim Arduino Informatieportaal
 
 Welkom op de pagina met daarin informatie over hoe je de arduino data in een dashboard kan laten zien.
 
@@ -11,7 +11,7 @@ Daar moet je 2 parameters heen sturen met daarin de data:
 1. features:<br>
 Hierin zit de data van je sensor, dit is in principe een record in JSON formaat.
 ```JSON
-{
+[{
     "attributes": {
     "sensorid": "<<naam van je sensor>>",
     "temp": 99,
@@ -23,7 +23,7 @@ Hierin zit de data van je sensor, dit is in principe een record in JSON formaat.
         "x": <<longitude>> ,
         "y": <<latitude>>
     }
-}
+}]
 ```
 2. f<br>
 Dit specificeert het output formaat:
@@ -39,7 +39,7 @@ Als je data goed onvangen is krijg je het volgende terug:
    }
 ]}
 ```
-Of een foutmelding
+Of een foutmelding (ook in een json structuur).
 
 ## Output
 Als je data goed ontvangen is kan je deze ook uiteraard terug zien op de kaart.<br>
