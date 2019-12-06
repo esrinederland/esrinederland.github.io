@@ -54,3 +54,6 @@ Zelf een dashboard maken of spelen met andere opties van arcgis?
 <br>Maak zelf een account aan op: https://developers.arcgis.com
 
 
+## Http(s)
+Mocht je problemen krijgen met de https url kan je ook een post doen naar deze URL via http:<br>
+http://devteam.esri.nl/portal/sharing/servers/87201f7115594d76bbb68053ca60327d/rest/services/Windesheim_TBL_Sensornetwerk_Proxy/FeatureServer/0
