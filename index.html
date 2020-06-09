@@ -38,7 +38,7 @@
                 <div class="block-group block-group-6-up tablet-block-group-1-up">
                     <div class="card card-bar-blue block tablet-leader-1">
                         <figure class="card-image-wrap">
-                            <a href="https://github.com/esrinederland/WebinarJSPerformanced" target="_blank">
+                            <a href="https://github.com/esrinederland/WebinarJSPerformance" target="_blank">
                                 <img class="card-image" src="./images/webinar_logo.png" alt="Webinar Logo" >
                             </a>
                         </figure>
@@ -46,7 +46,7 @@
                             <h4>
                                 <a href="https://github.com/esrinederland/WebinarJSPerformance" target="_blank">Webinar: De beste performance in kaartapplicaties op het web</a>
                             </h4>
-                            <p class="font-size--1">Code van alle demos's die we hebben laten zien tijdens het webinar</p>
+                            <p class="font-size--1">Code van alle demos's die we hebben laten zien tijdens het webinar.</p>
                         </div>
                     </div>
                     
@@ -173,17 +173,17 @@
 
     <!-- interactive patterns need to be initialized -->
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function () {
-                navigator.serviceWorker.register('sw.js').then(function (registration) {
-                    // Registration was successful
-                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
-                }, function (err) {
-                    // registration failed :(
-                    console.log('ServiceWorker registration failed: ', err);
-                });
-            });
-        }
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', function () {
+        //         navigator.serviceWorker.register('sw.js').then(function (registration) {
+        //             // Registration was successful
+        //             console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        //         }, function (err) {
+        //             // registration failed :(
+        //             console.log('ServiceWorker registration failed: ', err);
+        //         });
+        //     });
+        // }
 
         calcite.init()
     </script>
