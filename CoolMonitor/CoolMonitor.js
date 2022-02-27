@@ -7,7 +7,7 @@ function AddAction(action, params, appname) {
         var completeUrl = `${monitorUrl}&action=${action}&params=${params}&referer=${referer}&url=${url}&appname=${appname}`;
 
         fetch(completeUrl);
-        console.log(`monitoring of ${action} complete`);
+        //console.log(`monitoring of ${action} complete`);
     }, 0);
 }
 
