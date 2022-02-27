@@ -4,6 +4,16 @@ function AddAction(action, params, appname) {
         var monitorUrl = "https://coolmonitoring.azurewebsites.net/api/AddAction?code=5PrXOFlD2MoKpE8nMli28zydYRHgwaFbZz3ok8TBw13SNz7qmE3dzg==&clientId=default"
         var referer = document.referrer;
         var url = window.location.href;
+        if (!appname) {
+            path = window.location.pathname;
+            pathParts = path.split("/");
+            plength = pathParts.length;
+            if (plength > 1) {
+                appname = pathParts[plength - 2] + "/" + pathParts[plength - 1];
+                appname = appname.replace(".html", "");
+            }
+
+        }
         var completeUrl = `${monitorUrl}&action=${action}&params=${params}&referer=${referer}&url=${url}&appname=${appname}`;
 
         fetch(completeUrl);
@@ -11,4 +21,4 @@ function AddAction(action, params, appname) {
     }, 0);
 }
 
-AddAction("PageLoad", "", "");
+AddAction("PageLoad");
