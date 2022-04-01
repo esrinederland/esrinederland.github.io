@@ -12,6 +12,10 @@ function AddAction(action, params, appname) {
                 appname = pathParts[plength - 2] + "/" + pathParts[plength - 1];
                 appname = appname.replace(".html", "");
             }
+            if(appname.length <2)
+            {
+                appname = url.replace("http://", "").replace("https://", "").replace("www.", "").replace("/", "");
+            }
 
         }
         var completeUrl = `${monitorUrl}&action=${action}&params=${params}&referer=${referer}&url=${url}&appname=${appname}`;
