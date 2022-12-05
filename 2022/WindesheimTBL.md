@@ -41,6 +41,17 @@ Als je data goed onvangen is krijg je het volgende terug:
 ```
 Of een foutmelding (ook in een json structuur).
 
+---
+## Extra informatie 
+Voor meer informatie over het versturen van data vanuit MicroPython:
+
+https://makeblock-micropython-api.readthedocs.io/en/latest/public_library/Third-party-libraries/urequests.html
+
+Voor meer informatie over hoe ArcGIS Data wil ontvangen:
+
+https://developers.arcgis.com/rest/services-reference/enterprise/add-features.htm
+
+---
 ## Output
 Als je data goed ontvangen is kan je deze ook uiteraard terug zien op de kaart.<br>
 Voor alleen de kaart:<br>
